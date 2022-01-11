@@ -1,0 +1,20 @@
+##
+#  Brianne Leatherman
+#  CSC 119-2H2
+#  This program reads a file, and creates an output file with line numbers for each line
+##
+
+inputFileName = input("Input file name: ")
+outputFileName = input("Output file name: ")
+
+inFile = open(inputFileName, "r")
+outFile = open(outputFileName, "w")
+
+count = 0
+
+for line in inFile :   
+    count = count + 1
+    outFile.write("/*" + str(count) + "*/ " + line)
+
+inFile.close()
+outFile.close()
