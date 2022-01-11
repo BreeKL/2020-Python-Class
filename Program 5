@@ -1,0 +1,21 @@
+##
+#  Brianne Leatherman
+#  CSC 119-2H2
+#  This program takes input, adds it to a list if it is not already included, 
+#  and returns the contents when ten additions are made
+##
+
+def main():
+    list1 = []
+    list1.append(input("Please create an entry: ")) 
+    while len(list1) < 10:
+        tryToAdd(list1)
+    print("\nYour entries are: ", list1)
+    
+def tryToAdd(list1):
+    entry = input("Please create another entry: ")
+    if entry not in list1:
+        list1.append(entry)
+    else: print("\n\tAlready entered")
+    
+main()
