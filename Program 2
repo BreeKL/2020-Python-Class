@@ -1,0 +1,24 @@
+##
+#
+#  Brianne Leatherman
+#  CSC 119
+#  This program reads an integer input and returns whether it is negative,
+#  zero, or postive
+#
+
+#  Recieve input
+num = input("Please enter a number: ")
+
+#  Filter out some incorrect inputs
+while (" " <= num[0] <= ",") or (":" <= num[0] <= "~"):
+    num = input("Please enter a number: ")
+    
+num = float(num)
+
+#  Determine if input is positive, negative, or zero
+if num > 0:
+    print("This number is positive!")
+elif num == 0:
+    print("This number is zero!")
+elif num < 0:
+    print("This number is negative!")
