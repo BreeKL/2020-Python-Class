@@ -1,0 +1,21 @@
+##
+#  Student: Brianne Leatherman
+#  Course:  CSC 119
+#  Summary: This program prompts the user for two integers and then prints
+#           different mathematical calculations based on those numbers
+#
+
+#  User promt
+a = int(input("Please enter an integer: "))
+b = int(input("Please enter a second integer: "))
+
+#print mathematical calculations
+print("The sum of", a, "and", b, "is:", a + b)
+print("The difference of", a, "and", b, "is:", a - b)
+print("The product of", a, "and", b, "is:", a * b)
+print("The average of", a, "and", b, "is:", (a + b) / 2)
+print("The distance between", a, "and", b, "is:", abs(a - b))
+print("The bigger number of", a, "and", b, "is:", max(a, b))
+print("The smaller number of", a, "and", b, "is:", min(a, b))
+
+
