@@ -1,0 +1,44 @@
+##
+#  Brianne Leatherman
+#  CSC 119-2H2
+#  Summary: This is a program that will return the first digit of a number,
+#  the last digit of a number and count the number of digits in the number.
+##
+
+## Find the first digit of the entered string of integers
+#  @param n The string of integers
+#  @return The first digit of the string of integers
+def firstDigit(n):
+    digit = int(n[0])
+    return digit
+ 
+## Find the last digit of the entered string of integers
+#  @param n The string of integers
+#  @return The last digit of the string of integers
+def lastDigit(n):
+    digit = int(n[len(n)-1])        
+    return digit
+
+## Find the number of digits of the entered string of integers
+#  @param n The string of integers
+#  @return The number of digits of the string of integers
+def digitCount(n):
+    digit = len(n)
+    return digit
+    
+## Takes user input and calculates first integer, last integer, and total digits
+def main():
+    n = input("Please enter a number: ")
+    if n.isnumeric():
+        first = firstDigit(n)
+        last = lastDigit(n) 
+        count = digitCount(n)
+        print("First digit is: ", first)
+        print("Last digit is: ", last)
+        print("Number of digits is: ", count)
+        
+    else: print("Error: not a valid entry")
+
+# Calls main function    
+main()
+            
