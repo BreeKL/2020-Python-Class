@@ -1,0 +1,27 @@
+##
+#  Brianne Leatherman
+#  CSC 119-2H2
+#
+#  This program takes inputs from the user and returns the minimum value.
+##
+
+# Take first input from user
+first = True
+userInput = input("Please enter a number or press enter to quit: ")
+
+# Check for valid input and determine which value is the minimum
+while (userInput.isdigit() == True) or '-' in userInput:
+    number = float(userInput)
+    if first == True:
+        minimum = number
+        first = False
+    elif number < minimum:
+        minimum = number
+        
+    userInput = input("Please enter a number or press enter to quit: ")
+
+# Check to see if a first number was entered, and if it was, return the minumum
+if first == True:
+    print("No numbers entered.")
+else:
+    print("The minumum number is: ", minimum)
